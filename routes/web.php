@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/inicio', function () {
-    return view('welcome');
+Route::get('/', function () {
+    return view('master');
 });
+
+Route::get('/ejemplo', 'ejemploController@index');
 
 
 
