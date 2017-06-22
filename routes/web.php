@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Route::get('/ejemplo', 'ejemploController@index');
 
+Route::get('/registrarProyecto', 'proyectosController@registrar');
+
+
+
 
 
 

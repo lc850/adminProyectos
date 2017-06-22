@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Sistema de Administración de Proyectos</title>
 	<link rel="stylesheet" href="{{asset("css/bootstrap.css")}}">
+  <script src="{{asset("js/jquery-3.2.1.js")}}"></script>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -23,9 +24,9 @@
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Opciones <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
+            <li><a href="{{url('/registrarProyecto')}}">Registrar proyecto</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
             <li class="divider"></li>
@@ -48,11 +49,27 @@
   </div>
 </nav>
 
-
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      @yield('contenido')
+    </div>
+  </div>
+</div>
 
 <footer class="text-center">
 	<hr>
 	Negocios Electrónicos &copy; 2017
 </footer>
+<script src="{{asset("js/bootstrap.js")}}"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
