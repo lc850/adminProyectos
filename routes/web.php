@@ -12,14 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('master');
+    return view('home');
 });
 
 Route::get('/ejemplo', 'ejemploController@index');
 
 Route::get('/registrarProyecto', 'proyectosController@registrar');
 
+Route::post('/guardarProyecto', 'proyectosController@guardar');
 
+Route::get('/consultarProyectos', 'proyectosController@consultar');
+
+Route::get('/eliminarProyecto/{id}', 'proyectosController@eliminar');
 
 
 
